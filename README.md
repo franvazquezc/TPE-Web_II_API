@@ -5,22 +5,22 @@
 ### Obtencion de producto/s en formato JSON (GET):
 |Función				| Verbo HTTP | URI                   |
 |---------------------------------------|------------|-----------------------|
-|Obtener un producto pot id		| GET        | /productos/id         |
+|Obtener un producto por id		| GET        | /productos/id         |
 |Obtener listado total de productos	| GET        | /productos            |
 
 A este último se le puede agregar la combinación de una serie de parametros:
-- Ordenar =>	
+- Ordenar.	
 		?sort=<campo>&order=<ASC> :			
 			Ordena en forma ascendente por el campo indicado.
 
 		?sort=<campo>&order=<DESC> :			
 			Ordena en forma descendente por el campo indicado.
 
-- Filtrar =>	
+- Filtrar.
 		?search_by=<campo>&sought_value=<valor>	:	
 			Filtra los resultados que contengan el valor dado un campo determinado.
 
-- Paginado =>	
+- Paginado.	
 		?page=<nro_de_pagina>&page_size=<tamaño_de_pagina> :	
 			Divide los resultados en paginas de un tamaño determinado y devuelve la pagina indicada.
 
