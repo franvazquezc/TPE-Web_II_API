@@ -9,16 +9,19 @@
 |Obtener listado total de productos	| GET        | /productos            |
 
 A este último se le puede agregar la combinación de una serie de parametros:
-- Ordenar =>	?sort=<campo>&order=<ASC> :			
+- Ordenar =>	
+		?sort=<campo>&order=<ASC> :			
 			Ordena en forma ascendente por el campo indicado.
 
 		?sort=<campo>&order=<DESC> :			
 			Ordena en forma descendente por el campo indicado.
 
-- Filtrar =>	?search_by=<campo>&sought_value=<valor>	:	
+- Filtrar =>	
+		?search_by=<campo>&sought_value=<valor>	:	
 			Filtra los resultados que contengan el valor dado un campo determinado.
 
-- Paginado =>	?page=<nro_de_pagina>&page_size=<tamaño_de_pagina> :	
+- Paginado =>	
+		?page=<nro_de_pagina>&page_size=<tamaño_de_pagina> :	
 			Divide los resultados en paginas de un tamaño determinado y devuelve la pagina indicada.
 
 Deben usarse por pares (si se usa un parametro del par se esta obligado a usar el otro) y pueden combinarse en una misma consulta.
