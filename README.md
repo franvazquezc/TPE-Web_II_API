@@ -5,8 +5,8 @@
 ### Obtencion de producto/s en formato JSON (GET):
 |Función				| Verbo HTTP | URI                   |
 |---------------------------------------|------------|-----------------------|
-|Obtener un producto por id		| GET        | /productos/id         |
-|Obtener listado total de productos	| GET        | /productos            |
+|Obtener un producto por id		| GET        | /product/id           |
+|Obtener listado total de productos	| GET        | /products             |
 
 A este último se le puede agregar la combinación de una serie de parametros:
 - Ordenar:	
@@ -32,12 +32,12 @@ Deben usarse por pares (si se usa un parametro del par se esta obligado a usar e
 ### Borrar un producto (DELETE):
 |Función				| Verbo HTTP | URI                   |
 |---------------------------------------|------------|-----------------------|
-|Borrar un producto con un id dado	| DELETE     | /productos/id         |
+|Borrar un producto con un id dado	| DELETE     | /product/id           |
 
 ### Insertar un producto (ADD):
 |Función				| Verbo HTTP | URI                   |
 |---------------------------------------|------------|-----------------------|
-|Insertar un producto en la BBDD	| POST	     | /productos            |
+|Insertar un producto en la BBDD	| POST	     | /product              |
 
 En el body de la request deben especificarse los valores de los campos del producto a agregar en formato JSON:
 ```json
@@ -53,7 +53,7 @@ Todos los campos deben estar completados.
 ### Modificar un producto (UPDATE):
 |Función				| Verbo HTTP | URI                   |
 |---------------------------------------|------------|-----------------------|
-|Modificar un producto con un id dado	| PUT	     | /productos/id         |
+|Modificar un producto con un id dado	| PUT	     | /product/id           |
 
 En el body de la request deben especificarse los valores de los campos del producto a modificar en formato JSON:
 ```json		
